@@ -1,0 +1,6 @@
+<map id="include/hcsr04.h" name="include/hcsr04.h">
+<area shape="rect" id="node2" href="$output_8h.html" title="Output class. " alt="" coords="5,80,75,107"/>
+<area shape="rect" id="node5" href="$input_8h.html" title="Input class. " alt="" coords="99,80,160,107"/>
+<area shape="rect" id="node6" href="$timers_8h.html" title="Timer class. " alt="" coords="163,155,232,181"/>
+<area shape="rect" id="node3" href="$pin_8h.html" title="Pin interface. " alt="" coords="88,155,139,181"/>
+</map>
