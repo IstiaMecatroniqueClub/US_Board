@@ -10,11 +10,21 @@ This repository contains a "board" folder with the schematics of the board, a "c
 
 ## The source code
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+### The files
 
-## Installation
+The board waits for a remote request CAN message with the IDMSGCAN identifier (0x0C0), then returns a data CAN message with the same identifier and the sensor value (the distance over 2 bytes). Note that the board can also return an error value (if the returned distance is 0, 1 or 2 it means that an error occured).
 
-### The ATMega .hex file
+### The files
+
+The "code/include" folder contains 
+ - a Pin interface class to handle a pin on the ATMega (this class sould not be instanciated)
+ - an Input class to handle an input pin
+ - an Ouput class to handle an output pin
+ - a Led class to handle an led connected to the ATMega
+ - a Hcrs04 class to handle the US sensor
+ - a Timer class to handle timers in the ATMega
+
+### The ATMega output.hex file
 In the code folder you can find a Makefile to generate the binary *.hex file and upload it to the ATMega. The makefile is configured for
  - avrdude compiler ( $ sudo apt-get install avrdude avr-libc)
  - AVRispmkII programmer
