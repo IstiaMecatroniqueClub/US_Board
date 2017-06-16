@@ -10,7 +10,7 @@ This repository contains a "board" folder with the schematics of the board, a "c
 
 ## The source code
 
-### The files
+### How does it work
 
 The board waits for a remote request CAN message with the IDMSGCAN identifier (0x0C0), then returns a data CAN message with the same identifier and the sensor value (the distance over 2 bytes). Note that the board can also return an error value (if the returned distance is 0, 1 or 2 it means that an error occured).
 
